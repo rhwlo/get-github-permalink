@@ -22,7 +22,7 @@ interface SelectionInfo {
 }
 
 const GITHUB_REMOTE_SSH_REGEX: RegExp = new RegExp(
-  "^(?:ssh://)?git@github.com:(?<organization>[^/]+)/(?<repository>.+?)(?:.git)?$"
+  "^(?:ssh://git@github.com/|git@github.com:)(?<organization>[^/]+)/(?<repository>.+?)(?:.git)?$"
 );
 const GITHUB_REMOTE_HTTP_REGEX: RegExp = new RegExp(
   "^https?://github.com/(?<organization>[^/]+)/(?<repository>.+?)(?:.git)?$"
